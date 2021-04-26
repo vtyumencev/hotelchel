@@ -382,7 +382,7 @@ header {
 
 @media screen and (max-width: 500px) {
     .h1-title {
-        font-size: 20px;
+        font-size: 24px;
     }
     .h1-title:after {
         height: 2px;
@@ -1100,6 +1100,15 @@ header {
     .about-blocks {
         display: block;
     }
+    .rooms__items {
+        margin-top: 20px;
+    }
+    .advantages {
+        margin: 0 0;
+    }
+    .advantages__items {
+        margin-top: 20px;
+    }
 }
 @media screen and (max-width: 600px) {
     .banners-slider__tip {
@@ -1157,11 +1166,12 @@ header {
         height: 8px;
         margin: 5px 10px 0 10px;
     }
+
     .cafe {
         padding: 15px 0;
     }
     .cafe__photos-slider {
-        margin-top: 30px;
+        margin-top: 20px;
     }
     .cafe-photos__navigation {
         display: none;
