@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="http://fonts.cdnfonts.com/css/trebuchet-ms-2" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/gotham-pro" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/js-datepicker/dist/datepicker.min.css">
+    <script src="https://unpkg.com/js-datepicker"></script>
+
+    <link rel="stylesheet" href="css/common.css">
+    <title>Гостиница Челябинск</title>
+</head>
+<body>
+    <header>
+        <div class="full-header">
+            <div class="full-header__intro">
+                <div class="full-header__communicate">
+                    <a href="tel:+73512370303" class="communicate__call">+7 (351) 237-03-03</a>
+                    <a href="tel:+79127706555" class="communicate__call">+7 (912) 770-65-55</a>
+                    <div class="communicate__social">
+                        <a class="social__button">
+                            <div class="header__social-icon whatsapp-icon"></div>
+                        </a>
+                        <a class="social__button">
+                            <div class="header__social-icon viber-icon"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="mobile-menu-button">
+                    <div class="mobile-menu-button__string mmb-string-1"></div>
+                    <div class="mobile-menu-button__string mmb-string-2"></div>
+                    <div class="mobile-menu-button__string mmb-string-3"></div>
+                </div>
+                <div class="full-header__logo">
+                    <div class="full-header__logo-container">
+                        <div class="logo-picture">
+                            <img src="img/pic/logo.png">
+                        </div>
+                        <div class="logo-caption">
+                            4 этаж
+                        </div>
+                    </div>
+                </div>
+                <div class="full-header__addresses">
+                    <div class="addresses__name">
+                        г. Челябинск,<br>
+                        ул. Степана Разина 4<span class="addresses__floor">, этаж 4</span>
+                    </div>
+                    <a href="." class="addresses__open-map">
+                        <div class="open-map__icon"></div>
+                        <div class="open-map__text">Расстояние до центра 2.1 км</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <menu class="main-menu">
+        <ul class="main-menu__list">
+            <li><a href=".">Номера и цены</a></li>
+            <li><a href=".">Контакты</a></li>
+            <li><a href=".">Отзывы</a></li>
+            <li><a href=".">Как до нас добраться</a></li>
+            <li><a href=".">Акции</a></li>
+            <li><a href=".">Наши гости</a></li>
+            <li><a href=".">Групповые заезды</a></li>
+        </ul>
+    </menu>
+
+    <div class="main-container">
+
+        <div class="banners-slider">
+            <div class="banners-slider__items swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="banners-slider__item swiper-slide">
+                        <div class="banners-slider__picture" style="background-image: url(img/pic/1.jpg);"></div>
+                        <div class="banners-slider__tip">
+                            <div class="tip-title">Высокий уровень комфорта</div>
+                            <div class="tip-description">Номера нашей гостиницы оснащены всем необходимым для вашего полноценного и комфортного отдыха.</div>
+                        </div>
+                    </div>
+                    <div class="banners-slider__item swiper-slide">
+                        <div class="banners-slider__picture" style="background-image: url(img/pic/2.jpg);"></div>
+                        <div class="banners-slider__tip">
+                            <div class="tip-title">Получи кэшбек</div>
+                            <div class="tip-description">Оставь отзыв о нашей гостинице и получи кешбэк!</div>
+                        </div>
+                    </div>
+                    <div class="banners-slider__item swiper-slide">
+                        <div class="banners-slider__picture" style="background-image: url(img/pic/3.jpg);"></div>
+                        <div class="banners-slider__tip">
+                            <div class="tip-title">Забота о вашем здоровье</div>
+                            <div class="tip-description">Мы заботимся о вас и поэтому препятствуем размножению различных бактерий не только с помощью дезинфекции!</div>
+                        </div>
+                    </div>
+                    <div class="banners-slider__item swiper-slide">
+                        <div class="banners-slider__picture" style="background-image: url(img/pic/4.jpg);"></div>
+                        <div class="banners-slider__tip">
+                            <div class="tip-title">Как добраться?</div>
+                            <div class="tip-description">Актуальная информация о нашем местоположении.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banners-slider__navigation">
+                <button class="navigation__button prev js_navigation__button-prev">
+                    <div class="navigation__icon prev"></div>
+                </button>
+                <button class="navigation__button next js_navigation__button-next">
+                    <div class="navigation__icon next"></div>
+                </button>
+            </div>
+            <div class="banners-slider__bottom">
+                <div class="banners-slider__pagination swiper-pagination"></div>
+                <div class="goto-booking">
+                    <div class="goto-booking__icon"></div>
+                    <div class="goto-booking__text">Бронирование номеров</div>
+                    <div class="goto-booking__icon"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="booking-form">
+            <div class="booking-form__container regular-container">
+                <div class="booking-form__inputs">
+                    <div class="booking-form__dates">
+                        <div class="booking-form__input booking-form__date-arrive">
+                            <div class="booking-form__icon-calendar"></div>
+                            <div class="booking-form__input-placeholder">26.04.2021</div>
+                        </div>
+                        <div class="booking-form__input booking-form__date-leave">
+                            <div class="booking-form__icon-calendar"></div>
+                            <div class="booking-form__input-placeholder">Дата выезда</div>
+                        </div>
+                    </div>
+                    <div class="booking-form__type-people">
+                        <div class="booking-form__input booking-form__room-type selector">
+                            <div class="booking-form__input-placeholder">Двухместный номер 2 категории</div>
+                            <div class="booking-form__icon-select"></div>
+                        </div>
+                        <div class="booking-form__input booking-form__people-count selector">
+                            <div class="booking-form__input-placeholder">1 человек</div>
+                            <div class="booking-form__icon-select"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="booking-form__checkout">
+                    <div class="booking-form__total">Цена: 1501 руб.</div>
+                    <button class="button booking-form__checkout-button">Оформить</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="disclaimer">
+            <div class="disclaimer__container regular-container">
+                <div class="h1-title">
+                    <span>Уважаемые посетители</span>
+                </div>
+                <div class="disclaimer__description">В настоящее время в гостинице «Челябинск» парименяются следующие меры по противодействию и распространения короновирусной инфекции:</div>
+                <div class="disclaimer__measures">
+                    <div class="measures__item">
+                        <div class="measures__icon" style="background-image: url(img/icons/fan.svg);"></div>
+                        <div class="measures__text">Регулярное проветривание</div>
+                    </div>
+                    <div class="measures__item">
+                        <div class="measures__icon" style="background-image: url(img/icons/bactericide.svg);"></div>
+                        <div class="measures__text">Дезинфекция номеров, общественных зон и посуды</div>
+                    </div>
+                    <div class="measures__item">
+                        <div class="measures__icon" style="background-image: url(img/icons/thermometer.svg);"></div>
+                        <div class="measures__text">Контроль температуры тела у посетителей и сотрудников</div>
+                    </div>
+                    <div class="measures__item">
+                        <div class="measures__icon" style="background-image: url(img/icons/disposable-tableware.svg);"></div>
+                        <div class="measures__text">Имеется одноразовая посуда</div>
+                    </div>
+                    <div class="measures__item">
+                        <div class="measures__icon" style="background-image: url(img/icons/disinfectant.svg);"></div>
+                        <div class="measures__text">В общественных зонах установлены дозаторы с антисептиком</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rooms">
+            <div class="regular-container rooms__container">
+                <div class="h1-title">
+                    <span>Наши номера</span>
+                </div>
+                <div class="rooms__items">
+                    <div class="rooms__item room-card">
+                        <button class="room-card__preview">
+                            <div class="room-card__pic" style="background-image: url(img/pic/9.jpg);"></div>
+                            <div class="room-card__preview-bg">
+                                <div class="room-card__preview-text">Просмотр</div>
+                            </div>
+                        </button>
+                        <div class="room-card__text">
+                            <div class="room-card__title">Одноместный номер 2 категории</div>
+                            <div class="room-card__old-price">1900 руб.</div>
+                            <div class="room-card__actual-price">1501 руб.</div>
+                            <button class="button room-card__book-button">Забронировать</button>
+                            <div class="room-card__benefit">сэкономьте 21% сегодня</div>
+                        </div>
+                    </div>
+                    <div class="rooms__item room-card">
+                        <button class="room-card__preview">
+                            <div class="room-card__pic" style="background-image: url(img/pic/8.jpg);"></div>
+                            <div class="room-card__preview-bg">
+                                <div class="room-card__preview-text">Просмотр</div>
+                            </div>
+                        </button>
+                        <div class="room-card__text">
+                            <div class="room-card__title">Двухместный номер 2 категории</div>
+                            <div class="room-card__old-price">2700 руб.</div>
+                            <div class="room-card__actual-price">1998 руб.</div>
+                            <button class="button room-card__book-button">Забронировать</button>
+                            <div class="room-card__benefit">сэкономьте 26% сегодня</div>
+                        </div>
+                    </div>
+                    <div class="rooms__item room-card">
+                        <button class="room-card__preview">
+                            <div class="room-card__pic" style="background-image: url(img/pic/7.jpg);"></div>
+                            <div class="room-card__preview-bg">
+                                <div class="room-card__preview-text">Просмотр</div>
+                            </div>
+                        </button>
+                        <div class="room-card__text">
+                            <div class="room-card__title">Одноместный номер 1 категории</div>
+                            <div class="room-card__old-price">2800 руб.</div>
+                            <div class="room-card__actual-price">2520 руб.</div>
+                            <button class="button room-card__book-button">Забронировать</button>
+                            <div class="room-card__benefit">сэкономьте 10% сегодня</div>
+                        </div>
+                    </div>
+                    <div class="rooms__item room-card">
+                        <button class="room-card__preview">
+                            <div class="room-card__pic" style="background-image: url(img/pic/8.jpg);"></div>
+                            <div class="room-card__preview-bg">
+                                <div class="room-card__preview-text">Просмотр</div>
+                            </div>
+                        </button>
+                        <div class="room-card__text">
+                            <div class="room-card__title">Двухместный номер 1 категории</div>
+                            <div class="room-card__old-price">2800 руб.</div>
+                            <div class="room-card__actual-price">2520 руб.</div>
+                            <button class="button room-card__book-button">Забронировать</button>
+                            <div class="room-card__benefit">сэкономьте 10% сегодня</div>
+                        </div>
+                    </div>
+                    <div class="rooms__item room-card">
+                        <button class="room-card__preview">
+                            <div class="room-card__pic" style="background-image: url(img/pic/6.jpg);"></div>
+                            <div class="room-card__preview-bg">
+                                <div class="room-card__preview-text">Просмотр</div>
+                            </div>
+                        </button>
+                        <div class="room-card__text">
+                            <div class="room-card__title">Номер класса полулюкс</div>
+                            <div class="room-card__old-price">2800 руб.</div>
+                            <div class="room-card__actual-price">2520 руб.</div>
+                            <button class="button room-card__book-button">Забронировать</button>
+                            <div class="room-card__benefit">сэкономьте 10% сегодня</div>
+                        </div>
+                    </div>
+                    <div class="rooms__item room-card">
+                        <button class="room-card__preview">
+                            <div class="room-card__pic" style="background-image: url(img/pic/5.jpg);"></div>
+                            <div class="room-card__preview-bg">
+                                <div class="room-card__preview-text">Просмотр</div>
+                            </div>
+                        </button>
+                        <div class="room-card__text">
+                            <div class="room-card__title">Люкс</div>
+                            <div class="room-card__old-price">2800 руб.</div>
+                            <div class="room-card__actual-price">2520 руб.</div>
+                            <button class="button room-card__book-button">Забронировать</button>
+                            <div class="room-card__benefit">сэкономьте 10% сегодня</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="advantages">
+            <div class="regular-container advantages__container">
+                <div class="h1-title">
+                    <span>Наши преимущества</span>
+                </div>
+                <div class="advantages__items">
+                    <div class="advantage">
+                        <div class="advantage__icon" style="background-image: url(img/icons/calendar-2.svg)"></div>
+                        <div class="advantage__caption">Вся инфраструктура для жизни</div>
+                    </div>
+                    <div class="advantage">
+                        <div class="advantage__icon" style="background-image: url(img/icons/exitstop.svg)"></div>
+                        <div class="advantage__caption">Остановка транспорта у входа</div>
+                    </div>
+                    <div class="advantage">
+                        <div class="advantage__icon" style="background-image: url(img/icons/cashback.svg)"></div>
+                        <div class="advantage__caption">Кэшбек за отзыв</div>
+                    </div>
+                    <div class="advantage">
+                        <div class="advantage__icon" style="background-image: url(img/icons/lunch.svg)"></div>
+                        <div class="advantage__caption">Круглосуточное кафе на этаже</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cafe">
+            <div class="cafe__container regular-container">
+                <div class="h1-title">
+                    <span>Новое кафе для любимых гостей</span>
+                </div>
+                <div class="cafe__photos-slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="cafe-photos__photos__item swiper-slide">
+                            <div class="cafe-photos__picture" style="background-image: url(img/pic/10.jpg);"></div>
+                        </div>
+
+                        <div class="cafe-photos__photos__item swiper-slide">
+                            <div class="cafe-photos__picture" style="background-image: url(img/pic/3.jpg);"></div>
+                        </div>
+                    </div>
+                    <div class="cafe-photos__navigation">
+                        <button class="navigation__button prev js_navigation__button-prev">
+                            <div class="navigation__icon prev"></div>
+                        </button>
+                        <button class="navigation__button next js_navigation__button-next">
+                            <div class="navigation__icon next"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="nearby">
+            <div class="regular-container nearby__container">
+                <div class="h1-title">
+                    <span>Рядом с нами</span>
+                </div>
+                <div class="nearby__photos-slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="nearby-places__item swiper-slide">
+                            <div class="nearby-place__container">
+                                <div class="nearby-places__picture" style="background-image: url(img/pic/11.jpg);"></div>
+                                <div class="nearby-places__caption">ТЦ «Синегорье»</div>
+                            </div>
+                        </div>
+                        <div class="nearby-places__item swiper-slide">
+                            <div class="nearby-place__container">
+                                <div class="nearby-places__picture" style="background-image: url(img/pic/13.jpg);"></div>
+                                <div class="nearby-places__caption">Стадион «Локомотив»</div>
+                            </div>
+                        </div>
+                        <div class="nearby-places__item swiper-slide">
+                            <div class="nearby-place__container">
+                                <div class="nearby-places__picture" style="background-image: url(img/pic/15.jpg);"></div>
+                                <div class="nearby-places__caption">УралГАФК</div>
+                            </div>
+                        </div>
+                        <div class="nearby-places__item swiper-slide">
+                            <div class="nearby-place__container">
+                                <div class="nearby-places__picture" style="background-image: url(img/pic/12.jpg);"></div>
+                                <div class="nearby-places__caption">ЧГАКИ</div>
+                            </div>
+                        </div>
+                        <div class="nearby-places__item swiper-slide">
+                            <div class="nearby-place__container">
+                                <div class="nearby-places__picture" style="background-image: url(img/pic/14.jpg);"></div>
+                                <div class="nearby-places__caption">Дорожная больница РЖД</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nearby-places__navigation">
+                        <button class="navigation__button prev js_navigation__button-prev">
+                            <div class="navigation__icon prev"></div>
+                        </button>
+                        <button class="navigation__button next js_navigation__button-next">
+                            <div class="navigation__icon next"></div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="about">
+            <div class="regular-container">
+                <div class="about-blocks">
+                    <div class="about__description">
+                        <div class="about__title">Недорогая гостиница рядом с вокзалом</div>
+                        <div>
+                            <p>Гостиница «Челябинск» - это недорогой отель, расположенный в деловом центре города.</p>
+                            <p>Отличительной особенностью является отличная транспортная доступность: гостиница находится рядом с ж/д вокзалом (ее окна выходят прямо на привокзальную площадь), в 2 минутах пешего хода от станции «Челябинск-Главный». 30 минут занимает дорога от гостиницы до челябинского аэропорта, а добраться до центральной площади города можно всего за десять минут.</p>
+                            <p>Удобства добавляет и тот факт, что непосредственно у выхода из гостиницы расположена остановка общественного транспорта. Это экономит время нашим гостям и позволяет им легко перемещаться по Челябинску без умения ориентироваться в городских улицах и дорогах.</p>
+                            <p>В 2011 году мы провели капитальный ремонт и реконструировали гостиничные номера. В частности, были добавлены апартаменты класса «люкс» с улучшенной планировкой и более высоким уровнем комфорта.</p>
+                            <p>При этом цены на посуточный съем номеров в нашей гостинице остаются крайне доступными. Стоимость размещения одного человека начинается от 1300 рублей, поэтому если вы подыскиваете недорогую гостиницу в Челябинске, то гостиница «Челябинск» - лучший выбор. Ведь только у нас демократичные цены на проживание сочетаются с удобной транспортной доступностью и качественным обслуживанием (вежливость и дружелюбие персонала отмечают практически все наши гости в своих отзывах на независимых площадках Booking.com и TripAdvisor).</p>
+                            <p><b>В каждом номере вас ждет:</b></p>
+                            <ul>
+                                <li>Телефон</li>
+                                <li>Телевизор</li>
+                                <li>Холодильник</li>
+                                <li>Кондиционер</li>
+                                <li>Рабочая зона</li>
+                                <li>Беспроводной доступ в интернет</li>
+                                <li>Новая мебель, современный интерьер, постельное белье и т.п.</li>
+                            </ul>
+                            <p>Для Вашего удобства в номерах бесплатно: халат, тапочки, средства гигиены, минеральная вода.</p>
+                        </div>
+                        <div class="description__more">
+                            <a class="description-more__link" href=".">
+                                <div class="description-more__icon"></div>
+                                <div class="description-more__text">
+                                    <span>подробнее</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about__right">
+                        <div class="about__manager-callback">
+                            <div class="manager-profile">
+                                <div class="manager-profile__pic"></div>
+                                <div class="manager-profile__text">
+                                    <div class="manager-profile__status">Ваш менеджер</div>
+                                    <div class="manager-profile__name">Елена</div>
+                                </div>
+                            </div>
+                            <button class="button manager-callback_button">Заказать звонок</button>
+                        </div>
+                        <div class="about__yandex-grade">
+                            <img class="yandex-grade__image" src="img/pic/yandex-grade.png">
+                        </div>
+                        <div class="about__news">
+                            <div class="news__block-title">Новости</div>
+                            <div class="news__items">
+                                <a class="news__item" href=".">
+                                    <div class="news__datetime">8 декабря 2020</div>
+                                    <div class="news__title">
+                                        <span>Исторический музей Челябинска приглашает на выставку «Сокровища Востока»</span>
+                                    </div>
+                                </a>
+                                <a class="news__item" href=".">
+                                    <div class="news__datetime">30 ноября 2020</div>
+                                    <div class="news__title">
+                                        <span>Выставка «Родной дом: башкирская юрта и русская изба» в Челябинске</span>
+                                    </div>
+                                </a>
+                                <a class="news__item" href=".">
+                                    <div class="news__datetime">10 ноября 2020</div>
+                                    <div class="news__title">
+                                        <span>Спектакль «Капитанская дочка» от Челябинского молодежного театра</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <a class="news__more" href=".">
+                                <span>Все новости</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="full-footer">
+        <div class="regular-container footer__contacts-container">
+            <div class="footer__left">
+                <div class="footer__email">
+                    <div class="footer-email__icon"></div>
+                    <a class="footer__email-link" href="mailto:hotel-chelsy@mail.ru">
+                        <span>hotel-chelsy@mail.ru</span>
+                    </a>
+                </div>
+                <div class="footer__documents">
+                    <a class="footer__document-link" href=".">
+                        <span>Обязательства по защите персональных данных</span>
+                    </a>
+                    <a class="footer__document-link" href=".">
+                        <span>Свидетельство о присвоении категории</span>
+                    </a>
+                </div>
+                <div class="footer__social">
+                    <a class="footer__social-link" href="." target="_blank">
+                        <div class="footer__social-icon footer__social-icon-fb"></div>
+                    </a>
+                    <a class="footer__social-link" href="." target="_blank">
+                        <div class="footer__social-icon footer__social-icon-vk"></div>
+                    </a>
+                    <a class="footer__social-link" href="." target="_blank">
+                        <div class="footer__social-icon footer__social-icon-ig"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__right">
+                <div class="footer__address footer-right__block">
+                    <div class="footer-address__icon footer-right__item-icon"></div>
+                    <div class="footer-address__text footer-right__item-text">Челябинск, ул. Степана Разина, д. 4 (4 этаж)</div>
+                </div>
+                <div class="footer__phones footer-right__block">
+                    <div class="footer-right__block-name">Телефон:</div>
+                    <div class="footer__phones-list">
+                        <div class="footer__phones-icon footer-right__item-icon"></div>
+                        <a class="footer__phone footer-right__item-text" href="tel:+73512370303">(351) 237-03-03</a>
+                        <a class="footer__phone footer-right__item-text" href="tel:+7352601660">(351) 260-16-60</a>
+                    </div>
+                </div>
+                <div class="footer__phones footer-right__block">
+                    <div class="footer-right__block-name">Бронирование:</div>
+                    <div class="footer__phones-list">
+                        <div class="footer__phones-booking-icon footer-right__item-icon"></div>
+                        <a class="footer__phone footer-right__item-text" href="tel:+73512601660">(351) 260-16-60</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__delimiter"></div>
+        <div class="regular-container footer__copyright-container">
+            © 2021 Гостиница «Челябинск»
+        </div>
+    </footer>
+
+    <script>
+        let banner_swiper = new Swiper('.banners-slider__items', {
+            pagination: {
+                el: '.banners-slider__pagination',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '"></span>';
+                },
+            },
+            navigation: {
+                nextEl: '.js_navigation__button-next',
+                prevEl: '.js_navigation__button-prev',
+            },
+        });
+
+        let cafe_swiper = new Swiper('.cafe__photos-slider', {
+            navigation: {
+                nextEl: '.js_navigation__button-next',
+                prevEl: '.js_navigation__button-prev',
+            },
+        });
+
+        let nearby_swiper = new Swiper('.nearby__photos-slider', {
+            slidesPerView: 2.3,
+            spaceBetween: 20,
+            freeMode: true,
+            navigation: {
+                nextEl: '.js_navigation__button-next',
+                prevEl: '.js_navigation__button-prev',
+            },
+        });
+
+        const monthRu = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
+        const daysRu = ['Вс', 'Пн', 'Вт', 'Чт', 'Пт', 'Вт', 'Сб'];
+
+        const params = {
+            id: 1,
+            customMonths: monthRu,
+            customDays: daysRu,
+            startDay: 1,
+            position: 'bl',
+            disableYearOverlay: true,
+            minDate: new Date()
+        };
+        const paramsStart = Object.assign({}, params);
+        Object.assign(paramsStart, {
+            onSelect: instance => {
+                let fDate = getFormatDate(instance.dateSelected);
+                document.querySelector('.booking-form__date-arrive .booking-form__input-placeholder').innerHTML = fDate;
+            }
+        });
+        const paramsEnd = Object.assign({}, params);
+        Object.assign(paramsEnd, {
+            onSelect: instance => {
+                let fDate = getFormatDate(instance.dateSelected);
+                document.querySelector('.booking-form__date-leave .booking-form__input-placeholder').innerHTML = fDate;
+            }
+        });
+
+        const bookingStart = datepicker('.booking-form__date-arrive', paramsStart);
+        const bookingEnd = datepicker('.booking-form__date-leave', paramsEnd);
+
+        document.querySelector('.booking-form__date-arrive .booking-form__input-placeholder').innerHTML = getFormatDate(new Date());
+
+        function getFormatDate(dateTime) {
+            return ( dateTime.getDate() < 10 ? ("0" + dateTime.getDate()) : dateTime.getDate() ) +
+                "." + ( (dateTime.getMonth() + 1) < 10 ? "0" + (dateTime.getMonth() + 1) : (dateTime.getMonth() + 1)) +
+                "." + dateTime.getFullYear();
+        }
+
+    </script>
+</body>
+</html>
