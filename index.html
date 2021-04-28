@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://unpkg.com/js-datepicker/dist/datepicker.min.css">
     <script src="https://unpkg.com/js-datepicker"></script>
 
+    <script src="js/common.js"></script>
     <link rel="stylesheet" href="css/common.css">
     <title>Гостиница Челябинск</title>
 </head>
@@ -57,6 +58,31 @@
                         <div class="open-map__text">Расстояние до центра 2.1 км</div>
                     </a>
                 </div>
+            </div>
+            <div class="mobile-menu">
+                <ul class="mobile-menu__list">
+                    <li>
+                        <a href=".">Номера и цены</a>
+                    </li>
+                    <li>
+                        <a href=".">Контакты</a>
+                    </li>
+                    <li>
+                        <a href=".">Отзывы</a>
+                    </li>
+                    <li>
+                        <a href=".">Как до нас добраться</a>
+                    </li>
+                    <li>
+                        <a href=".">Акции</a>
+                    </li>
+                    <li>
+                        <a href=".">Наши гости</a>
+                    </li>
+                    <li>
+                        <a href=".">Групповые заезды</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
@@ -556,7 +582,23 @@
                 nextEl: '.js_navigation__button-next',
                 prevEl: '.js_navigation__button-prev',
             },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1.1,
+                    spaceBetween: 10,
+                },
+                400: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 10,
+                },
+                800: {
+                    slidesPerView: 2.3,
+                    spaceBetween: 20,
+                },
+            }
         });
+
+        // Drawing calendar for booking
 
         const monthRu = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
         const daysRu = ['Вс', 'Пн', 'Вт', 'Чт', 'Пт', 'Вт', 'Сб'];
