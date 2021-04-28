@@ -599,6 +599,8 @@
         });
 
         // Drawing calendar for booking
+        let bookingStart;
+        let bookingEnd;
 
         const monthRu = ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'];
         const daysRu = ['Вс', 'Пн', 'Вт', 'Чт', 'Пт', 'Вт', 'Сб'];
@@ -624,11 +626,23 @@
             onSelect: instance => {
                 let fDate = getFormatDate(instance.dateSelected);
                 document.querySelector('.booking-form__date-leave .booking-form__input-placeholder').innerHTML = fDate;
+            },
+            onShow: instance => {
+                if(instance.el.classList.contains('booking-form__date-leave')) {
+                    if (instance.calendar.offsetWidth > instance.el.offsetWidth && bookingEnd.position.right !== 1) {
+                        bookingEnd.position.right = 1;
+                        bookingEnd.show();
+                    }
+                    else if(instance.calendar.offsetWidth <= instance.el.offsetWidth && bookingEnd.position.right === 1) {
+                        bookingEnd.position.right = 0;
+                        bookingEnd.show();
+                    }
+                }
             }
         });
 
-        const bookingStart = datepicker('.booking-form__date-arrive', paramsStart);
-        const bookingEnd = datepicker('.booking-form__date-leave', paramsEnd);
+        bookingStart = datepicker('.booking-form__date-arrive', paramsStart);
+        bookingEnd = datepicker('.booking-form__date-leave', paramsEnd);
 
         document.querySelector('.booking-form__date-arrive .booking-form__input-placeholder').innerHTML = getFormatDate(new Date());
 
